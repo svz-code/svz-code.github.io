@@ -1,0 +1,29 @@
+.intro-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.intro-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.intro-text h2 {
+    margin: 0 0 15px 0;
+}
+
+.intro-text p {
+    margin: 0;
+}
