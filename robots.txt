@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /projects
+Allow: /communication
+Allow: /licensing
+Host: svz-code.github.io
+
+Sitemap: https://svz-code.github.io/sitemap.xml
