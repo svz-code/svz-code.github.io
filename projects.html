@@ -6,6 +6,7 @@
         <link rel="icon" type="image/png" href="images/logo.png">
         <style>
             @import url("basdec.css");
+            @import url("projects.css");
         </style>
     </head>
     <body>
@@ -23,8 +24,63 @@
         </header>
         
         <main>
-            <img id="pfp" style="width: 400px;" title="Я, между прочим, говорил, что я балуюсь в GIMP" src="images/smehuyarik.png"/>
-            <h2>Откиньтесь на спинку кресла, пока я привожу GitHub в порядок</h2>
+            <h2>Мои проекты:</h2>
+            <div class="project-block" style="background-image: url('images/nobanner.png');">
+                <h2>Karton</h2>
+                <p>User-space эмулятор архитектуры x86(_64).<br>Написан на C, использует Zydis и LLVM. В первую очередь предназначен для моего планшета на Android, HONOR Pad 9.<br>Скорость и качество не гарантируются.</p>
+                <a href="https://github.com/svz-code/Karton"><button type="button"><img src="images/github.svg" alt="">GitHub</button></a>
+            </div>
+            <div class="project-block" style="background-image: url('https://raw.githubusercontent.com/MightyPirates/OpenComputers/refs/heads/master-MC1.7.10/assets/misc/banner.png');">
+                <h2>OpenComputers: Reanimated</h2>
+                <p>Очередная (моя) попытка портировать Minecraft мод OpenComputers с Forge 1.12.2 на Fabric 1.20.1 (и выше).<br>Для исполнения Lua используется Ferro, что банально форк LuaJ.<br>Спасибо, кстати, lucsoft за ассеты.</p>
+                <a href="https://github.com/OpenComputers-Reanimated/OpenComputers-Reanimated"><button type="button"><img src="images/github.svg" alt="">GitHub</button></a>
+            </div>
+            <div class="project-block" style="background-image: url('images/nobanner.png');">
+                <h2>Soze!Bot</h2>
+                <p>Прошлое название - doas!bot. Это Telegram бот, прямое продолжение Discord бота $sudo-bot, который разрабатывался в 2022-2023 гг.<br>На данный момент на Python, но серьезно задумываюсь над переносом на Kotlin.</p>
+                <a href="https://github.com/svz-code/soze-bot"><button type="button"><img src="images/github.svg" alt="">GitHub</button></a>
+            </div>
+            <div class="project-block" style="background-image: url('images/sitebanner.png');">
+                <h2>Этот сайт</h2>
+                <p>Я бы не назвал это каким-то проектом, но все-таки я это сюда добавлю.<br>Создан по принципу "Двойного Форка", т. е. на основе:</p>
+                <p>1. Сайта Owlory<br>2. <a href="https://lina-torovoltas.github.io/">https://lina-torovoltas.github.io/</a></p>
+                <p>Сравнить мой сайт вы можете только со вторым, потому что Owlory, команда разработчиков, развалилась 6 октября 2024.</p> 
+                <a href="https://github.com/svz-code/svz-code.github.io"><button type="button"><img src="images/github.svg" alt="">GitHub</button></a>
+            </div>
+            
+            
+            <h2>Заброшенные проекты (<a href="https://github.com/arduarchive">ACPA</a>):</h2>
+            <div class="project-block" style="background-image: url('images/nobanner.png');">
+                <h2>udpping / tcpping</h2>
+                <p>Два проекта на Dlang, один для подключения и отправки всякой хрени на UDP сервер, другой - на TCP.<br>Иначально были на Rust, но после развала команды разработки <a href="https://github.com/FTeam-archive">FTeam</a> (9 февраля 2025) я начал везде отказываться от Rust.</p>
+                <div style="display: flex; justify-content: space-between;">
+                    <a href="https://github.com/arduarchive/udpping"><button type="button"><img src="images/github.svg" alt="">udpping</button></a>
+                    <h2>Выбери свою палочку twix!</h2>
+                    <a href="https://github.com/arduarchive/tcpping"><button type="button"><img src="images/github.svg" alt="">tcpping</button></a>
+                </div>
+            </div>
+            <div class="project-block" style="background-image: url('images/sudobot.png');">
+                <h2>$sudo-bot</h2>
+                <p>Discord бот на Python, разрабатывался в 2022-2023 гг.<br>Это в принципе мой первый проект вне Scratch.<br>Код, конечно, не очень хорошего качества, но и храню я исходный код $sudo-bot только ради памяти.</p>
+                <a href="https://github.com/arduarchive/sudo-bot-archive"><button type="button"><img src="images/github.svg" alt="">GitHub</button></a>
+            </div>
+            
+            <h2>Не мои проекты, но сюда я контрибутил:</h2>
+            <div class="project-block" style="background-image: url('images/linabanner.png');">
+                <h2>0xNULL_Bot (последний мой контрибут 18.06.2025)</h2>
+                <p>Telegram бот на Python от Lina Kiratorasu. Я добавлял /ask, /teach, обновлял систему логирования. Кстати говоря, Soze!Bot это форк этого бота.</p>
+                <a href="https://github.com/lina-torovoltas/0xNULL_Bot-telegram"><button type="button"><img src="images/github.svg" alt="">GitHub</button></a>
+            </div>
+            <div class="project-block" style="background-image: url('https://raw.githubusercontent.com/Grisshink/scrap/refs/heads/main/extras/scrap_splash_v2.png');">
+                <h2>Scrap (последний мой контрибут 03.02.2025)</h2>
+                <p>Блочный ЯП от Grisshink. Я добавил поддержку macOS и FreeBSD.<br>Но сейчас, вероятно, уже просто так на macOS не скомпилируется, т. к. было очень много обновлений, в том числе с добавлением (и удалением) LLVM, а место для тестирований я потерял.</p>
+                <a href="https://github.com/Grisshink/scrap"><button type="button"><img src="images/github.svg" alt="">GitHub</button></a>
+            </div>
+            <div class="project-block" style="background-image: url('images/linabanner.png');">
+                <h2>FasmMacroLib (последний мой контрибут 22.01.2025)</h2>
+                <p>Макросы для FASM от Lina Kiratorasu, направленные на упрощение разработки. Я реализовывал часть функционала для Linux arm64.</p>
+                <a href="https://github.com/lina-torovoltas/FasmMacroLib"><button type="button"><img src="images/github.svg" alt="">GitHub</button></a>
+            </div>
         </main>
         
         <footer>
