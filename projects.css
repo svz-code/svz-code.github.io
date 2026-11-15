@@ -1,28 +1,48 @@
 .project-block {
-    position: relative;
-    width: 660px;
-    min-height: 300px;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 20px auto;
-    overflow: hidden;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    isolation: isolate;
-    
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
+  position: relative;
+  padding: 15px;
+  border: 1px solid #000;
+  width: 660px;
+  min-height: 300px;
+  /*margin: 0 0 26px 0;*/
+  background: #d8d8d8;
+  isolation: isolate;
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
 }
 
 .project-block::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.75);
-    z-index: 0;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.project-block h2,
+.project-block h3,
+.project-block h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.project-block p {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.project-block ul,
+.project-block ol {
+  margin-bottom: 15px;
+  padding-left: 25px;
+}
+
+.project-block li {
+  margin-bottom: 8px;
+  line-height: 20px;
 }
 
 .project-block h2,
@@ -34,13 +54,6 @@
     position: relative;
     z-index: 1;
     color: #fff;
-}
-
-.project-block h2,
-.project-block h3,
-.project-block h4 {
-    margin-top: 0;
-    margin-bottom: 20px;
 }
 
 .project-block p {

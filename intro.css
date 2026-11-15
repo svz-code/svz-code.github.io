@@ -1,29 +1,44 @@
 .intro-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 700px;
+  padding: 15px;
+  border: 1px solid #000;
+  width: 700px;
+  background: #d8d8d8;
+  display: flex;
+}
+
+.left-pane {
+  width: 210px;
+  border-right: 1px solid #999999;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-pane {
+  flex: 1;
+  padding: 12px 14px 16px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  line-height: 1.3;
+  color: #000000;
 }
 
 .intro-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .intro-text {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .intro-text h2 {
-    margin: 0 0 15px 0;
+  margin: 0 0 15px 0;
 }
 
 .intro-text p {
-    margin: 0;
+  margin: 0;
 }
