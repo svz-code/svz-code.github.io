@@ -7,6 +7,7 @@
         <style>
             @import url("basdec.css");
             @import url("intro.css");
+            @import url("notification.css");
         </style>
         <meta name="google-site-verification" content="v5yfN10YwWSNKet7bKjkiXe32eBajiAA1SJwPe-YNcw" />
 
@@ -122,5 +123,21 @@
             <p>сайт находится в разработке</p>
             <p>&#127279; SvZ, 2026</p>
         </footer>
+
+        <aside class="friend-request" id="friend-request" aria-label="Уведомление">
+            <img class="friend-request-avatar" src="images/zevs.jpg" alt="Кот Зевс">
+            <div class="friend-request-body">
+                <div class="friend-request-text">
+                    <span class="friend-request-title">Кот Зевс в 200 метров от вас</span><br>
+                    отправил вам заявку в друзья, принять?
+                </div>
+                <div class="friend-request-actions">
+                    <button type="button" class="friend-request-btn friend-request-accept">Принять</button>
+                    <button type="button" class="friend-request-btn friend-request-decline">Отклонить</button>
+                </div>
+            </div>
+        </aside>
+
+        <script src="notification.js" defer></script>
     </body>
 </html>
