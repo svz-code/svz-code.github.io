@@ -68,10 +68,21 @@
 
     window.setTimeout(show, APPEAR_DELAY);
   }
+  
+  function checkTimeAndInit() {
+    var now = new Date();
+    
+    var isAprilFools = (now.getMonth() === 3 && now.getDate() === 1);
+    var isTargetTime = (now.getHours() === 14 && now.getMinutes() === 6);
+    
+    if (isAprilFools || isTargetTime) {
+      init();
+    }
+  }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
+    document.addEventListener("DOMContentLoaded", checkTimeAndInit);
   } else {
-    init();
+    checkTimeAndInit();
   }
 })();
